@@ -3,11 +3,15 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #1b203e;
+    
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
 
     font-style: normal;
+}
+
+body {
+  background-color: #1b203e;
 }
 
 h1 {
@@ -18,13 +22,15 @@ h1 {
     color: #f3f5f8;
 }
 
+.flex {
+    display: flex;
+}
+
 .login {
-    font-size: 22px;
+    font-size: 32px;
     letter-spacing: 2px;
     font-weight: bold;
 }
-
-
 
 a {
     color:#f3f5f8;
@@ -47,12 +53,22 @@ a:hover {
     font-weight: bold;
 }
 
+.logo-icon {
+    display: flex;
+    
+}
 
+.logo-icon img {
+
+  width: 100px;
+  height: 100px;
+
+}
 
 nav {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: end;
     background: #2e3356;
     height: 8vh;
 }
@@ -81,6 +97,7 @@ nav li{
 .mobile-menu {
     display: none;
     cursor: pointer;
+    align-items: center;
 }
 
 .mobile-menu div{
@@ -97,12 +114,13 @@ nav li{
   .nav-list {
     position: absolute;
     top: 8vh;
+    padding-right: 1.5rem;
     right: 0;
     width: 50vw;
     height: 92vh;
     background: #2e3356;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: space-around;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
